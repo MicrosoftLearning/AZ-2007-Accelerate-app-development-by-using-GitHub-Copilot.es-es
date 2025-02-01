@@ -457,7 +457,7 @@ La creación del repositorio de GitHub para el código le habilitará compartir 
 
 #### Tarea 1: Crear un repositorio de GitHub
 
-Use los siguientes pasos para usar esta sección del ejercicio:
+Completa los siguientes pasos para usar esta sección del ejercicio:
 
 1. Asegúrate de tener tu cuenta de GitHub abierta en una ventana del explorador.
 
@@ -514,7 +514,7 @@ Use los siguientes pasos para usar esta sección del ejercicio:
 
 #### Tarea 2: Crear un archivo Léame vacío en GitHub
 
-Use los siguientes pasos para usar esta sección del ejercicio:
+Completa los siguientes pasos para usar esta sección del ejercicio:
 
 1. Cambia a la ventana del explorador que muestra tu cuenta de GitHub.
 
@@ -534,7 +534,7 @@ Use los siguientes pasos para usar esta sección del ejercicio:
 
 #### Tarea 3: Incorporar los cambios al repositorio local
 
-Use los siguientes pasos para usar esta sección del ejercicio:
+Completa los siguientes pasos para usar esta sección del ejercicio:
 
 1. Cambie a Visual Studio Code y asegúrese de que la vista Control de código fuente está abierta.
 
@@ -705,7 +705,7 @@ Completa los siguientes pasos para usar esta sección del ejercicio:
 
 #### Tarea 2: Confirmar e insertar las actualizaciones de archivos Léame
 
-Use los siguientes pasos para usar esta sección del ejercicio:
+Completa los siguientes pasos para usar esta sección del ejercicio:
 
 1. Abre la vista Control de código fuente de Visual Studio Code.
 
@@ -1032,7 +1032,7 @@ Completa los siguientes pasos para usar esta sección del ejercicio:
 
 Una vez completado, el método SearchBooks debe leer el título del libro proporcionado por un usuario, comprobar si un libro está disponible para préstamo y mostrar un mensaje que indique el estado de disponibilidad del libro. El método debe usar los archivos Books.json y Loans.json para buscar el título del libro coincidente y determinar el estado de disponibilidad del libro.
 
-Use los siguientes pasos para usar esta sección del ejercicio:
+Completa los siguientes pasos para usar esta sección del ejercicio:
 
 1. Dedica un minuto a tener en cuenta los requisitos de proceso del método SearchBooks.
 
@@ -1479,7 +1479,7 @@ Completa los siguientes pasos para usar esta sección del ejercicio:
 
 Puedes usar la vista Control de código fuente en Visual Studio Code para confirmar los cambios en el repositorio local. Después de confirmar los cambios, puedes sincronizarlos con el repositorio remoto.
 
-Use los siguientes pasos para usar esta sección del ejercicio:
+Completa los siguientes pasos para usar esta sección del ejercicio:
 
 1. Seleccione la vista Control de código fuente.
 
@@ -1610,7 +1610,7 @@ Esta estructura refleja y es compatible con la parte de Servicios del proyecto A
 
 La evaluación de las pruebas unitarias existentes te ayudará a desarrollar pruebas unitarias para las clases de acceso a datos en el proyecto Library.Infrastructure.
 
-Use los siguientes pasos para usar esta sección del ejercicio:
+Completa los siguientes pasos para usar esta sección del ejercicio:
 
 1. Cierra todos los archivos que hayas abierto en el editor.
 
@@ -1706,7 +1706,7 @@ El proyecto Library.Infrastructure contiene clases de acceso a datos que interac
 
 Empezarás escribiendo pruebas unitarias para la clase JsonLoanRepository.
 
-Use los siguientes pasos para usar esta sección del ejercicio:
+Completa los siguientes pasos para usar esta sección del ejercicio:
 
 1. Agrega el siguiente archivo de proyecto al contexto chat: **UnitTests.csproj**.
 
