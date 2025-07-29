@@ -1,133 +1,133 @@
 ---
 demo:
-    title: 'Demo: Convert code from one programming language to another'
-    module: 'Module 3: Develop code features using GitHub Copilot tools'
+  title: 'Demostración: Conversión de código de un lenguaje de programación a otro'
+  module: 'Module 3: Develop code features using GitHub Copilot tools'
 ---
 
-# Demo: Convert code from one programming language to another
+# Demostración: Conversión de código de un lenguaje de programación a otro
 
-## Instructions
+## Instrucciones
 
-The demo activities are designed for an environment that includes the following resources:
+Las actividades de demostración están diseñadas para un entorno que incluye los siguientes recursos:
 
 - Visual Studio Code.
-- The C# Dev Kit extension for Visual Studio Code.
-- The GitHub Copilot and GitHub Copilot Chat extensions for Visual Studio Code. A GitHub account with an active subscription for GitHub Copilot is required.
-- Sample code projects created using C#.
+- Extensión del kit de desarrollo de C# para Visual Studio Code.
+- Las extensiones de GitHub Copilot y GitHub Copilot Chat para Visual Studio Code. Se requiere una cuenta de GitHub con una suscripción activa para GitHub Copilot.
+- Proyectos de código de ejemplo creados con C#.
 
-**NOTE**: We recommend that instructors consider using their own GitHub account and GitHub Copilot subscription for the demos. This will enable you to control and customize your dev environment. It will also make it easier to adjust the demos to fit the needs of your classrooms.
+**NOTA**: Se recomienda que los instructores consideren usar su propia cuenta de GitHub y la suscripción a GitHub Copilot para las demostraciones. Esto te permitirá controlar y personalizar el entorno de desarrollo. También harás que sea más fácil ajustar las demostraciones para adaptarlas a las necesidades de tus aulas.
 
-**IMPORTANT**: If you choose to run the demos in the hosted lab environment rather than your instructor PC, you can unzip the sample apps in the hosted environment. You will need to configure the GitHub Copilot extensions in the hosted environment before you can run the demos. You may find that the hosted environment is slower than your local environment, so you may need to adjust the pace of the demos accordingly.
+**IMPORTANTE**: Si decides ejecutar las demostraciones en el entorno de laboratorio hospedado en lugar de en el equipo instructor, puedes descomprimir las aplicaciones de ejemplo en el entorno hospedado. Tendrás que configurar las extensiones de GitHub Copilot en el entorno hospedado para poder ejecutar las demostraciones. Es posible que el entorno hospedado sea más lento que el entorno local, por lo que es posible que tengas que ajustar el ritmo de las demostraciones según proceda.
 
-### Introduce the demo
+### Presentación de la demostración
 
-GitHub Copilot can help you to convert code from one programming language to another. For example, you can ask GitHub Copilot to convert a function or code snippet to another programming language.
+GitHub Copilot puede ayudarte a convertir código de un lenguaje de programación a otro. Por ejemplo, puedes pedir a GitHub Copilot que convierta una función o un fragmento de código en otro lenguaje de programación.
 
-You can complete the following types of code conversions by using GitHub Copilot:
+Puede completar los siguientes tipos de conversiones de código mediante GitHub Copilot:
 
-- Convert an entire code file to another programming language.
-- Convert a function to another programming language.
-- Convert a code snippet to another programming language.
+- Convierta un archivo de código completo en otro lenguaje de programación.
+- Convierta una función en otro lenguaje de programación.
+- Convierta un fragmento de código en otro lenguaje de programación.
 
-Each of the chat interfaces (Chat view, Quick Chat window, and inline chat) can be used to convert code between programming languages. Your choice of chat interface depends on your preference and the complexity of the code that you want to convert.
+Cada una de las interfaces de chat (vista chat, ventana chat rápido y chat en línea) se puede usar para convertir código entre lenguajes de programación. La elección de la interfaz de chat depende de tus preferencias y de la complejidad del código que deseas convertir.
 
-Suppose you're just getting started on the `QuarterlyIncomeReport` project. You discuss the project goals with a colleague. They mention that they have a Python file that could provide some of the features that you're looking for. They point you the repository for the Python code. You decide to open the Python code project in Visual Studio Code and use the Chat view to convert the Python code to C#.
+Supongamos que acaba de empezar a trabajar en el proyecto de `QuarterlyIncomeReport`. Analizará los objetivos del proyecto con un compañero. Mencionan que tienen un archivo de Python que podría proporcionar algunas de las características que está buscando. Apuntan al repositorio para el código de Python. Decide abrir el proyecto de código de Python en Visual Studio Code y usar la vista Chat para convertir el código de Python en C#.
 
-## Convert code between programming languages by using the Chat view
+## Conversión de código entre lenguajes de programación mediante la vista Chat
 
-1. Open the **APL2007M3Python** project folder in Visual Studio Code.
+1. Abre la carpeta del proyecto **APL2007M3Python** en Visual Studio Code.
 
-    This project contains a Python version of the `QuarterlyIncomeReport` project that you've worked on during this module. You can have GitHub Copilot explain the code to you using the Chat view or Explain This smart action.
+    Este proyecto contiene una versión de Python del proyecto `QuarterlyIncomeReport` en el que ha trabajado durante este módulo. Puede hacer que GitHub Copilot le explique el código mediante la vista Chat o Explicar esta acción inteligente.
 
-1. Run the Python application.
+1. Ejecute la aplicación de Python.
 
-    Notice that the output from the Python application is essentially the same as the output from the C# application that you created earlier.
+    Tenga en cuenta que la salida de la aplicación de Python es básicamente la misma que la salida de la aplicación de C# que creó anteriormente.
 
-1. Open the `main.py` Python file.
+1. Abra el archivo `main.py` Python.
 
-    The Python file contains a function that generates sales data. You want to convert this Python code to C#.
+    El archivo de Python contiene una función que genera datos de ventas. Quiere convertir este código de Python en C#.
 
-1. Select the entire file contents.
+1. Seleccione todo el contenido del archivo.
 
-1. Open the Chat view and then enter the following prompt:
+1. Abra la vista Chat y escriba el siguiente símbolo del sistema:
 
     ```plaintext
     Convert #selection to C#
     ```
 
-1. Take a moment to review the response from GitHub Copilot.
+1. Dedique un momento a revisar la respuesta de GitHub Copilot.
 
-    The response should contain the C# version of the Python code that you selected.
+    La respuesta debe contener la versión de C# del código de Python seleccionado.
 
-1. Open a second instance of Visual Studio Code.
+1. Abra una segunda instancia de Visual Studio Code.
 
-1. Open the Chat view, enter the following prompt:
+1. Abra la vista Chat y escriba el siguiente símbolo del sistema:
 
     ```plaintext
     @workspace /new console application in C# NET8 named APL2007M3B. Only .cs and .csproj files. Enable ImplicitUsings and Nullable
     ```
 
-    If Copilot responds with an error message about the "path argument", try the same prompt again.
+    Si Copilot responde con un mensaje de error sobre el "argumento path", vuelva a intentar la misma solicitud.
 
-1. Select **Create Workspace**
+1. Seleccione **Crear área de trabajo**
 
-1. In the Open Folder dialog, select the **Desktop** folder and then select **Select as Parent Folder**.
+1. En el cuadro de diálogo Abrir carpeta, seleccione la carpeta **Escritorio** y, a continuación, seleccione **Seleccionar como carpeta principal**.
 
-    wait for the workspace to be created.
+    espere a que se cree el área de trabajo.
 
-1. When the workspace is created, select **Program.cs**, and delete the file contents.
+1. Cuando se cree el área de trabajo, seleccione **Program.cs**, y elimine el contenido del archivo.
 
-1. Switch to the instance of Visual Studio Code that contains the Python code.
+1. Cambie a la instancia de Visual Studio Code que contiene el código de Python.
 
-1. Scroll to the top of the Chat view and click the **Copy** button to copy the generated C# code to the clipboard.
+1. Desplácese hasta la parte superior de la vista Chat y haga clic en el botón **Copiar ** para copiar el código de C# generado en el Portapapeles.
 
-1. Switch to the instance of Visual Studio Code that contains the C# code.
+1. Cambie a la instancia de Visual Studio Code que contiene el código de C#.
 
-1. Paste the C# code into the Program.cs file.
+1. Pegue el código de C# en el archivo Program.cs.
 
-1. Save the Program.cs file.
+1. Guarde el archivo Program.cs.
 
-1. Run the C# application.
+1. Ejecute la aplicación de C#.
 
-    Notice that the output from the C# application is essentially the same as the output from the Python application.
+    Observe que la salida de la aplicación de C# es básicamente la misma que la salida de la aplicación Python.
 
-    If you have time, take a few minutes to review the differences between the converted C# code and the C# code from the previous unit.
+    Si tiene tiempo, dedique unos minutos a revisar las diferencias entre el código de C# convertido y el código de C# de la unidad anterior.
 
-## Convert code between programming languages by using the inline chat
+## Conversión de código entre lenguajes de programación mediante el chat en línea
 
-1. Switch back to the Visual Studio Code instance containing the Python project that you opened earlier.
+1. Vuelva a la instancia de Visual Studio Code que contiene el proyecto de Python que abrió anteriormente.
 
-1. Select the code in the main.py file.
+1. Seleccione el código en el archivo main.py.
 
-1. Open the inline chat and enter the following prompt:
+1. Abra el chat en línea y escriba el siguiente símbolo del sistema:
 
     ```plaintext
     Convert #selection to C#
     ```
 
-1. Review the response from GitHub Copilot and then select **Accept**.
+1. Revise la respuesta de GitHub Copilot y seleccione **Aceptar**.
 
-    The Python file should now contain C# code.
+    El archivo de Python ahora debe contener código de C#.
 
-1. Copy the generated C# code to the clipboard.
+1. Copie el código de C# generado en el Portapapeles.
 
-1. Close the main.py file without saving the changes.
+1. Cierre el archivo main.py sin guardar los cambios.
 
-1. Switch to the Visual Studio Code instance that contains the C# project and open the Program.cs file.
+1. Cambie a la instancia de Visual Studio Code que contiene el proyecto de C# y abra el archivo Program.cs.
 
-1. To overwrite the existing C# code, paste the C# code from the clipboard (converted from Python using inline chat) over the contents of the Program.cs file.
+1. Para sobrescribir el código de C# existente, pegue el código de C# del Portapapeles (convertido desde Python mediante chat en línea) sobre el contenido del archivo Program.cs.
 
-1. Save the Program.cs file.
+1. Guarde el archivo Program.cs.
 
-1. Run the C# application.
+1. Ejecute la aplicación de C#.
 
-    Notice that the output from the C# application is essentially the same as the output from the Python application.
+    Observe que la salida de la aplicación de C# es básicamente la misma que la salida de la aplicación Python.
 
-When you use GitHub Copilot to convert code between programming languages, try using both the Chat view and the inline chat. Although both tools share the same AI model, their results may differ. Trying both tools can help you to determine which tool is best for your specific use case.
+Cuando use GitHub Copilot para convertir código entre lenguajes de programación, intente usar la vista Chat y el chat en línea. Aunque ambas herramientas comparten el mismo modelo de IA, sus resultados pueden diferir. Probar ambas herramientas puede ayudarle a determinar qué herramienta es mejor para su caso de uso específico.
 
 > [!NOTE]
-> Programming languages often have an associated "programming style", and some languages may have unique features or code libraries. When you’re converting large sections of code from one programming language to another, it’s important to fully understand the target programming language and the intension of the code. GitHub Copilot suggestions should always be reviewed before accepting.
+> Los lenguajes de programación suelen tener un "estilo de programación" asociado y algunos lenguajes pueden tener características únicas o bibliotecas de código. Al convertir grandes secciones de código de un lenguaje de programación a otro, es importante comprender completamente el lenguaje de programación de destino y la intensión del código. Las sugerencias de GitHub Copilot siempre deben revisarse antes de aceptarlas.
 
-### Summary
+### Resumen
 
-In this demo, you used GitHub Copilot to convert Python code to C#. You used the Chat view and the inline chat to convert the Python code to C#. You then ran the C# application to verify that the output was the same as the output from the Python application. By using GitHub Copilot to convert code between programming languages, you can quickly adapt code from one language to another. Remember to review the converted code to ensure that it meets your requirements and that it follows the programming style of the target language.
+En esta demostración, has usado GitHub Copilot para convertir código de Python a C#. Has utilizado la vista Chat y el chat insertado para convertir el código de Python a C#. A continuación, has ejecutado la aplicación de C# para comprobar que la salida era la misma que la de la aplicación de Python. Mediante el uso de GitHub Copilot para convertir código entre lenguajes de programación, puedes adaptar rápidamente el código de un lenguaje a otro. Recuerda revisar el código convertido para asegurarte de que cumple tus requisitos y que sigue el estilo de programación del lenguaje de destino.
