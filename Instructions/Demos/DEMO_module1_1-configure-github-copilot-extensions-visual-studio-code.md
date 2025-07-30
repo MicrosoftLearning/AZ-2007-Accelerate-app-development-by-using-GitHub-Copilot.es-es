@@ -1,113 +1,113 @@
 ---
 demo:
-    title: 'Demo: Configure GitHub Copilot extensions for Visual Studio Code'
-    module: 'Module 1: Get started with GitHub Copilot'
+  title: "Demostración: Configuración de las extensiones de GitHub Copilot para Visual\_Studio Code"
+  module: 'Module 1: Get started with GitHub Copilot'
 ---
 
-# Demo: Configure GitHub Copilot extensions for Visual Studio Code
+# Demostración: Configuración de las extensiones de GitHub Copilot para Visual Studio Code
 
-## Instructions
+## Instrucciones
 
-The demo activities are designed for an environment that includes the following resources:
+Las actividades de demostración están diseñadas para un entorno que incluye los siguientes recursos:
 
 - Visual Studio Code.
-- The C# Dev Kit extension for Visual Studio Code.
-- The GitHub Copilot and GitHub Copilot Chat extensions for Visual Studio Code. A GitHub account with an active subscription for GitHub Copilot is required.
-- Sample code projects created using C#.
+- Extensión del kit de desarrollo de C# para Visual Studio Code.
+- Las extensiones de GitHub Copilot y GitHub Copilot Chat para Visual Studio Code. Se requiere una cuenta de GitHub con una suscripción activa para GitHub Copilot.
+- Proyectos de código de ejemplo creados con C#.
 
-**NOTE**: We recommend that instructors consider using their own GitHub account and GitHub Copilot subscription for the demos. This will enable you to control and customize your dev environment. It will also make it easier to adjust the demos to fit the needs of your classrooms.
+**NOTA**: Se recomienda que los instructores consideren usar su propia cuenta de GitHub y la suscripción a GitHub Copilot para las demostraciones. Esto te permitirá controlar y personalizar el entorno de desarrollo. También harás que sea más fácil ajustar las demostraciones para adaptarlas a las necesidades de tus aulas.
 
-**IMPORTANT**: If you choose to run the demos in the hosted lab environment rather than your instructor PC, you can unzip the sample apps in the hosted environment. You will need to configure the GitHub Copilot extensions in the hosted environment before you can run the demos. You may find that the hosted environment is slower than your local environment, so you may need to adjust the pace of the demos accordingly.
+**IMPORTANTE**: Si decides ejecutar las demostraciones en el entorno de laboratorio hospedado en lugar de en el equipo instructor, puedes descomprimir las aplicaciones de ejemplo en el entorno hospedado. Tendrás que configurar las extensiones de GitHub Copilot en el entorno hospedado para poder ejecutar las demostraciones. Es posible que el entorno hospedado sea más lento que el entorno local, por lo que es posible que tengas que ajustar el ritmo de las demostraciones según proceda.
 
-### Introduce the demo
+### Presentación de la demostración
 
-GitHub Copilot settings are configured in your GitHub.com account and the Visual Studio Code environment. In Visual Studio Code, you access settings for GitHub Copilot and GitHub Copilot Chat using the GitHub Copilot status menu.
+La configuración de GitHub Copilot se configura en la cuenta de GitHub.com y en el entorno de Visual Studio Code. En Visual Studio Code, puede acceder a la configuración de GitHub Copilot y GitHub Copilot Chat usando el menú de estado de GitHub Copilot.
 
-The settings in Visual Studio Code allow you to enable or disable GitHub Copilot for specific languages, configure the behavior of GitHub Copilot Chat, and customize the GitHub Copilot experience to suit your preferences. You can also configure GitHub Copilot settings on GitHub.com to manage your GitHub Copilot subscription, configure the retention of prompts and suggestions, and allow or block suggestions matching public code.
+La configuración de Visual Studio Code te permite habilitar o deshabilitar GitHub Copilot para idiomas específicos, configurar el comportamiento del chat de GitHub Copilot y personalizar la experiencia de GitHub Copilot para adaptarla a tus preferencias. También puede configurar la configuración de GitHub Copilot en GitHub.com para administrar su suscripción a GitHub Copilot, configurar la retención de avisos y sugerencias, y permitir o bloquear sugerencias que coincidan con código público.
 
-## Enable or disable GitHub Copilot
+## Habilitar o deshabilitar GitHub Copilot
 
-GitHub Copilot is enabled by default when you install the extension in Visual Studio Code. You can disable GitHub Copilot for a period of time if you need to.
+GitHub Copilot está habilitado de forma predeterminada al instalar la extensión en Visual Studio Code. Puede deshabilitar GitHub Copilot durante un período de tiempo si es necesario.
 
-To show the enable and disable options for the GitHub Copilot extension, follow these steps:
+Para mostrar las opciones de habilitar y deshabilitar la extensión GitHub Copilot, sigue estos pasos:
 
-1. In Visual Studio Code, open the **Extensions** view.
+1. En Visual Studio Code, abra la vista **Extensiones**.
 
-1. In the list of installed extensions, scroll down until you find **GitHub Copilot**.
+1. En la lista de extensiones instaladas, desplácese hacia abajo hasta que encuentre **GitHub Copilot**.
 
-1. To display a dropdown menu for the GitHub Copilot extension that lists Enable and Disable options, select on the gear icon next to GitHub Copilot.
+1. Para mostrar un menú desplegable para la extensión GitHub Copilot que enumere las opciones Habilitar y Deshabilitar, seleccione el icono de engranaje situado junto a GitHub Copilot.
 
-If you want to demonstrate the enable/disable options, you can select the disable option. However, be sure to re-enable GitHub Copilot before you continue with this demo.
+Si deseas demostrar las opciones de habilitación o deshabilitación, puedes seleccionar la opción de deshabilitar. Sin embargo, asegúrate de volver a habilitar GitHub Copilot antes de continuar con esta demostración.
 
-## Configure GitHub Copilot and Copilot Chat in Visual Studio Code
+## Configurar GitHub Copilot y el chat de Copilot en Visual Studio Code
 
-The GitHub Copilot extensions are configured with default settings when you install the extensions in Visual Studio Code. You can customize these settings to suit your preferences.
+Las extensiones de GitHub Copilot se configuran con los ajustes predeterminados al instalar las extensiones en Visual Studio Code. Puede personalizar esta configuración para adaptarse a sus preferencias.
 
-Visual Studio Code provides two ways to access the settings for the GitHub Copilot extensions:
+Visual Studio Code proporciona dos maneras de acceder a la configuración de las extensiones de GitHub Copilot:
 
-- You can use `Manage` icon to open the Visual Studio Code Settings tab. On the Settings tab, you can select **Extensions** and then select **Copilot**.
-- You can use the GitHub Copilot status icon to access the GitHub Copilot status menu and then select **Edit Settings**.
+- Puedes usar el icono `Manage` para abrir la pestaña Configuración de Visual Studio Code. En la pestaña Configuración, puedes seleccionar **Extensiones** y, a continuación, seleccionar **Copilot**.
+- Puede usar el icono de estado de GitHub Copilot para acceder al menú estado de GitHub Copilot y luego seleccionar **Editar configuración**.
 
-Demonstrate using the GitHub Copilot status menu to access settings. This opens the Visual Studio Code Settings tab with settings filtered for GitHub Copilot. Using the status menu is the quickest way to access the settings for the GitHub Copilot extensions.
+Muestra cómo usar el menú de estado de GitHub Copilot para acceder a la configuración. Se abrirá la pestaña Configuración de Visual Studio Code con la configuración filtrada para GitHub Copilot. El menú de estado es la forma más rápida de acceder a la configuración de las extensiones de GitHub Copilot.
 
-### Configure GitHub Copilot settings
+### Configurar los ajustes de GitHub Copilot
 
-To show the configuration settings for GitHub Copilot, follow these steps:
+Para mostrar los valores de configuración de GitHub Copilot, sigue estos pasos:
 
-1. On the bottom panel of the Visual Studio Code window, to open the GitHub Copilot status menu, select the GitHub Copilot status icon.
+1. En el panel inferior de la ventana Visual Studio Code, para abrir el menú de estado de GitHub Copilot, selecciona el icono de estado de GitHub Copilot.
 
-    The GitHub Copilot status icon indicates whether GitHub Copilot is enabled or disabled. When enabled, the background color of the icon matches the color of the status bar. When disabled, the background color of the icon contrasts with the color of the status bar.
+    El icono de estado de GitHub Copilot indica si GitHub Copilot está habilitado o deshabilitado. Cuando está habilitado, el color de fondo del icono coincide con el color de la barra de estado. Cuando está deshabilitado, el color de fondo del icono contrasta con el color de la barra de estado.
 
-1. In the GitHub Copilot status menu, select **Edit Settings**.
+1. En el menú estado de GitHub Copilot, seleccione **Editar configuración**.
 
-1. Take a minute to review the list of available settings.
+1. Dedique un minuto a revisar la lista de opciones de configuración disponibles.
 
-    Notice that the settings for both GitHub Copilot and GitHub Copilot Chat are listed. Also, under the Extensions label on the left, both extensions are labeled as Copilot. The first Copilot extension is for GitHub Copilot and the second is for GitHub Copilot Chat.
+    Observe que se muestran los valores de GitHub Copilot y el chat de GitHub Copilot. Además, en la etiqueta Extensiones de la izquierda, ambas extensiones están etiquetadas como Copilot. La primera extensión de Copilot es para GitHub Copilot y la segunda es para el chat de GitHub Copilot.
 
-1. Under the Extensions label, select the first Copilot extension.
+1. En la etiqueta Extensiones, seleccione la primera extensión de Copilot.
 
-    Notice that the settings list is now filtered for GitHub Copilot only.
+    Tenga en cuenta que la lista de configuración ahora está filtrada solo para GitHub Copilot.
 
-    The settings for GitHub Copilot include the following options:
+    La configuración de GitHub Copilot incluye las siguientes opciones:
 
-    - Enable Auto Completions
-    - Enable or disable Copilot completions for specified languages
+    - Habilitar finalizaciones automáticas
+    - Habilitar o deshabilitar finalizaciones de Copilot para idiomas especificados
 
-1. Take a minute to review the settings for **Enable or disable Copilot completions for specified languages**.
+1. Tómese un minuto para revisar la configuración de **Habilitar o deshabilitar las terminaciones de Copilot para los idiomas especificados**.
 
-    Notice that the settings for this option are configured using a list of languages and a value of **true** or **false** to enable or disable GitHub Copilot for each language. By default, GitHub Copilot is enabled for all languages. This setting is specified with the wildcard character `*` on the first row and the value **true**. The subsequent rows specify languages for which GitHub Copilot is enabled or disabled. For example, GitHub Copilot is enabled for **C#**, **JavaScript**, and **Python** and disabled for **Plaintext** and **Markdown**.
+    Observe que los ajustes para esta opción se configuran usando una lista de idiomas y un valor de **verdadero** o **falso** para habilitar o deshabilitar GitHub Copilot para cada idioma. De forma predeterminada, GitHub Copilot está habilitado para todos los idiomas. Esta configuración se especifica con el carácter comodín `*` en la primera fila y el valor **verdadero**. Las filas posteriores especifican los idiomas para los que GitHub Copilot está habilitado o deshabilitado. Por ejemplo, GitHub Copilot está habilitado para **C#**, **JavaScript** y **Python** y deshabilitado para **Plaintext** y **Markdown**.
 
-1. Under **Enable or disable Copilot completions for specified languages**, select **markdown**.
+1. En **Habilitar o deshabilitar finalizaciones de Copilot para idiomas especificados**, seleccione **Markdown**.
 
-    Notice that the value for Markdown is set to **false**. This means that GitHub Copilot is disabled for Markdown files.
+    Observe que el valor de Markdown está establecido en **falso**. Esto significa que GitHub Copilot está deshabilitado para los archivos Markdown.
 
-1. To enable Copilot for Markdown files, select **Edit Item** (pencil icon), select **false**, change the value to **true**, and then select **OK**.
+1. Para habilitar Copilot para archivos Markdown, seleccione **Editar elemento** (icono de lápiz), seleccione **falso**, cambie el valor a **verdadero** y luego seleccione **Aceptar**.
 
-    You can now use GitHub Copilot document projects using Markdown files.
+    Ahora puede usar proyectos de documentos de GitHub Copilot mediante archivos Markdown.
 
-1. Under the Extensions label, select the second Copilot extension.
+1. En la etiqueta Extensiones, seleccione la segunda extensión de Copilot.
 
-    Notice that the settings list is now filtered for GitHub Copilot Chat only.
+    Tenga en cuenta que la lista de configuración ahora está filtrada solo para Chat de GitHub Copilot.
 
-    The settings for GitHub Copilot Chat include **Preview** and **Experimental** options. Setting choices include the following options:
+    La configuración del chat de GitHub Copilot incluye las opciones **Vista previa** y **Experimental**. Entre las opciones de configuración se incluyen las siguientes:
 
-    - **Fix Test Failure**: This option is enabled by default so that GitHub Copilot can provide suggestions for fixing test failures.
-    - **Follow Ups**: By default, this setting is set to **firstOnly**, which means that GitHub Copilot provides follow-up suggestions only after the first suggestion. The other options are **always** and **never**.
-    - **Local Override**: By default, this option is set to **auto**, which means that GitHub Copilot uses the locale of the Visual Studio Code display language.
-    - **Scope Selection**: This option is disabled by default. When enabled, the user is prompted for a scope symbol when the user uses `/explain` in Chat without anything selected in the Editor.
-    - **Terminal Chat Location**: The default setting is chatView, which specifies the Chat View. The other options are for the Quick Chat area and the Terminal.
-    - **Use Project Templates**: This option is enabled by default so that GitHub Copilot uses relevant GitHub project templates when the user uses `/new` in Chat.
-    - **Enable Code Actions**: This option is enabled by default so that GitHub Copilot can provide code actions in the Editor.
-    - **Trigger Automatically**: This option is enabled by default so that GitHub Copilot suggestions are shown automatically as you type.
+    - **Corrección de errores de prueba**: Esta opción está habilitada de manera predeterminada de modo que GitHub Copilot pueda proporcionar sugerencias para corregir errores de prueba.
+    - **Seguimientos**: De manera predeterminada, esta configuración se establece en **firstOnly**, lo que significa que GitHub Copilot proporcionará sugerencias de seguimiento solo después de la primera sugerencia. Las otras opciones son **siempre** y **nunca**.
+    - **Reemplazo local**: De manera predeterminada, esta opción se establece en **automático**, lo que significa que GitHub Copilot usa la configuración regional de idioma para mostrar de Visual Studio Code.
+    - **Selección del ámbito**: Esta opción está deshabilitada de manera predeterminada. Cuando está habilitado, se solicita al usuario un símbolo de ámbito cuando el usuario usa `/explain` en Chat sin nada seleccionado en el Editor.
+    - **Ubicación de chat del terminal**: La configuración predeterminada es chatView, que especifica la vista de chat. Las otras opciones son para el área Chat rápido y el terminal.
+    - **Usar plantillas de proyecto**: Esta opción está habilitada de forma predeterminada para que GitHub Copilot use las plantillas de proyecto de GitHub pertinentes cuando el usuario usa `/new` en Chat.
+    - **Habilitar acciones de código**: Esta opción está habilitada de forma predeterminada para que GitHub Copilot pueda proporcionar acciones de código en el Editor.
+    - **Desencadenar automáticamente**: Esta opción está habilitada de manera predeterminada para que las sugerencias de GitHub Copilot se muestren automáticamente a medida que escribe.
 
-    We recommend keeping the default settings during this training. This helps to ensure that you have the expected experience when working on the modules in this learning path. When you have completed the training, you can experiment with these settings to customize your experience with GitHub Copilot and Copilot Chat.
+    Se recomienda mantener la configuración predeterminada durante este entrenamiento. Esto ayuda a garantizar que tenga la experiencia esperada cuando trabaje en los módulos de esta ruta de aprendizaje. Cuando haya completado el entrenamiento, puede experimentar con esta configuración para personalizar su experiencia con GitHub Copilot y Copilot Chat.
 
-## Configure GitHub Copilot settings on GitHub.com
+## Configuración de las opciones de GitHub Copilot en GitHub.com
 
-Your GitHub account settings on GitHub.com include options for configuring GitHub Copilot. These settings are used to manage your GitHub Copilot subscription, configure the retention of prompts and suggestions, and allow or block suggestions matching public code.
+La configuración de la cuenta de GitHub en GitHub.com incluir opciones para configurar GitHub Copilot. Esta configuración se usa para administrar su suscripción a GitHub Copilot, configurar la retención de avisos y sugerencias, y permitir o bloquear sugerencias que coincidan con código público.
 
-GitHub Copilot can be managed through personal accounts with GitHub Copilot Individual or through organization accounts with GitHub Copilot Business/Enterprise.
+GitHub Copilot se puede administrar a través de cuentas personales con GitHub Copilot Individual o a través de cuentas de organización con GitHub Copilot Business/Enterprise.
 
-## Keyboard shortcuts for GitHub Copilot
+## Métodos abreviados de teclado para GitHub Copilot
 
-You can use the default keyboard shortcuts in Visual Studio Code when using GitHub Copilot. Alternatively, you can rebind the shortcuts in the Keyboard Shortcuts editor using your preferred keyboard shortcuts for each specific command.
+Puede usar los métodos abreviados de teclado predeterminados en Visual Studio Code al usar GitHub Copilot. Como alternativa, puedes volver a enlazar los accesos directos en el editor Métodos abreviados de teclado y usar tus preferidos para cada comando específico.

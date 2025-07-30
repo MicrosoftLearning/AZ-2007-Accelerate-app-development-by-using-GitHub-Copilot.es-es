@@ -1,165 +1,165 @@
 ---
 demo:
-    title: 'Demo: Improve code quality by using GitHub Copilot Chat'
-    module: 'Module 5: Implement code improvements using GitHub Copilot tools'
+  title: 'Demostración: Mejora de la calidad del código con GitHub Copilot Chat'
+  module: 'Module 5: Implement code improvements using GitHub Copilot tools'
 ---
 
-# Demo: Improve code quality by using GitHub Copilot Chat
+# Demostración: Mejora de la calidad del código con GitHub Copilot Chat
 
-## Instructions
+## Instrucciones
 
-The demo activities are designed for an environment that includes the following resources:
+Las actividades de demostración están diseñadas para un entorno que incluye los siguientes recursos:
 
 - Visual Studio Code.
-- The C# Dev Kit extension for Visual Studio Code.
-- The GitHub Copilot and GitHub Copilot Chat extensions for Visual Studio Code. A GitHub account with an active subscription for GitHub Copilot is required.
-- Sample code projects created using C#.
+- Extensión del kit de desarrollo de C# para Visual Studio Code.
+- Las extensiones de GitHub Copilot y GitHub Copilot Chat para Visual Studio Code. Se requiere una cuenta de GitHub con una suscripción activa para GitHub Copilot.
+- Proyectos de código de ejemplo creados con C#.
 
-**NOTE**: We recommend that instructors consider using their own GitHub account and GitHub Copilot subscription for the demos. This will enable you to control and customize your dev environment. It will also make it easier to adjust the demos to fit the needs of your classrooms.
+**NOTA**: Se recomienda que los instructores consideren usar su propia cuenta de GitHub y la suscripción a GitHub Copilot para las demostraciones. Esto te permitirá controlar y personalizar el entorno de desarrollo. También harás que sea más fácil ajustar las demostraciones para adaptarlas a las necesidades de tus aulas.
 
-**IMPORTANT**: If you choose to run the demos in the hosted lab environment rather than your instructor PC, you can unzip the sample apps in the hosted environment. You will need to configure the GitHub Copilot extensions in the hosted environment before you can run the demos. You may find that the hosted environment is slower than your local environment, so you may need to adjust the pace of the demos accordingly.
+**IMPORTANTE**: Si decides ejecutar las demostraciones en el entorno de laboratorio hospedado en lugar de en el equipo instructor, puedes descomprimir las aplicaciones de ejemplo en el entorno hospedado. Tendrás que configurar las extensiones de GitHub Copilot en el entorno hospedado para poder ejecutar las demostraciones. Es posible que el entorno hospedado sea más lento que el entorno local, por lo que es posible que tengas que ajustar el ritmo de las demostraciones según proceda.
 
-### Introduce the demo
+### Presentación de la demostración
 
-The term "code quality" refers to the overall quality of the codebase, including readability, maintainability, and modularity. Code quality is a measure of how "well-structured" your code is and how easily it can be understood, maintained, and extended.
+El término "calidad del código" hace referencia a la calidad general del código base, incluida la legibilidad, el mantenimiento y la modularidad. La calidad del código es una medida de lo "bien estructurado" que es el código y de la facilidad con la que se puede entender, mantener y ampliar.
 
 > [!IMPORTANT]
-> Explain to the students that this demo isn't about best practices for developing high-quality code. Instead, it focuses on how to use GitHub Copilot Chat to generate suggestions for improving code quality in a sample application. The suggestions do not represent best practices or comprehensive solutions for developing high-quality code. Developers should use their judgment and expertise to evaluate and implement the suggestions provided by GitHub Copilot Chat. Implementing suggestions proposed by GitHub Copilot does not replace the need for thorough code reviews and testing.
+> Explica a los alumnos que esta demostración no trata sobre los procedimientos recomendados para desarrollar código de alta calidad. En su lugar, se centra en cómo usar GitHub Copilot Chat para generar sugerencias para mejorar la calidad del código en una aplicación de ejemplo. Las sugerencias no representan procedimientos recomendados ni soluciones integrales para el desarrollo de código de alta calidad. Los desarrolladores deben usar su criterio y experiencia para evaluar e implementar las sugerencias proporcionadas por el chat de GitHub Copilot. La implementación de sugerencias propuestas por GitHub Copilot no reemplaza la necesidad de realizar revisiones y pruebas exhaustivas de código.
 
-The following sections provide an overview of code refactoring and code quality that your students should be aware of.
+En las secciones siguientes se proporciona información general sobre la refactorización del código y la calidad del código que los alumnos deben tener en cuenta.
 
-#### Code refactoring and high-quality code
+#### Refactorización de código y código de alta calidad
 
-Code refactoring is the process of restructuring existing code without changing its external behavior. The goal of code refactoring is to improve the internal structure of the codebase, making it easier to understand, maintain, and extend. Code refactoring can help you produce high-quality code by enhancing readability, reducing complexity, improving modularity, and increasing reusability. Each of these factors helps to create a more manageable and maintainable codebase.
+La refactorización de código es el proceso de reestructuración del código existente sin cambiar su comportamiento externo. El objetivo de la refactorización de código es mejorar la estructura interna del código base, lo que facilita la comprensión, el mantenimiento y la ampliación. La refactorización de código puede ayudarle a generar código de alta calidad mejorando la legibilidad, reduciendo la complejidad, mejorando la modularidad y aumentando la reutilización. Cada uno de estos factores ayuda a crear un código base más fácil de administrar y mantener.
 
-Developers should consider the following factors when working on code quality improvements:
+Los desarrolladores deben tener en cuenta los siguientes factores al trabajar en mejoras en la calidad del código:
 
-- Readability: Improve or enhance the readability of code can make it easier for developers to understand.
-- Complexity: Reduce code complexity makes the code easier to understand, manage, and maintain.
-- Modularity and reusability: Break code down into smaller, reusable modules or components can make the code easier to manage and maintain.
+- Legibilidad: Mejorar la legibilidad del código puede facilitar la comprensión de los desarrolladores.
+- Complejidad: Reducir la complejidad del código facilita la comprensión, administración y mantenimiento del código.
+- Modularidad y reutilización: Dividir el código en módulos o componentes más pequeños y reutilizables puede facilitar la administración y el mantenimiento del código.
 
-The factors listed above represent three common areas that developers identify when discussing code quality. Other factors that can be associated with code quality include:
+Los factores enumerados anteriormente representan tres áreas comunes que los desarrolladores identifican al analizar la calidad del código. Otros factores que se pueden asociar con la calidad del código son:
 
-- Testability: The ease with which the code can be tested to ensure it works correctly. Often a byproduct of good design and modularity.
-- Extensibility: The ease with which the code can be extended or enhanced to add new features or functionality. Often a byproduct of good design and modularity.
+- Capacidad de prueba: La facilidad con la que se puede probar el código para asegurarse de que funciona correctamente. A menudo, un producto de buen diseño y modularidad.
+- Extensibilidad: La facilidad con la que se puede ampliar o mejorar el código para agregar nuevas características o funcionalidades. A menudo, un producto de buen diseño y modularidad.
 
-Code quality is not the only factor that developers consider during code reviews. Here are some more factors that developers often evaluate in addition to code quality:
+La calidad del código no es el único factor que los desarrolladores consideran durante las revisiones del código. Estos son algunos factores más que los desarrolladores suelen evaluar además de la calidad del código:
 
-- Reliability: The code’s ability to perform its intended functions under specified conditions.
-- Performance: How efficiently the code executes.
-- Security: The code’s ability to protect data and resources from unauthorized access or modification.
-- Scalability: The code’s ability to handle increased workloads or growth in the future.
-- Usability: The ease with which the code can be used by developers or end users.
-- Portability: The ability of the code to run on different platforms or environments.
+- Confiabilidad: La capacidad del código para realizar sus funciones previstas en condiciones especificadas.
+- Rendimiento: Con qué eficacia se ejecuta el código.
+- Seguridad: La capacidad del código para proteger los datos y los recursos frente al acceso o modificación no autorizados.
+- Escalabilidad: La capacidad del código para controlar mayores cargas de trabajo o el crecimiento en el futuro.
+- Facilidad de uso: La facilidad con la que los desarrolladores o los usuarios finales pueden usar el código.
+- Portabilidad: La capacidad del código para ejecutarse en diferentes plataformas o entornos.
 
 > [!NOTE]
-> The next two units in this module cover improving code reliability, performance, and security using GitHub Copilot Chat.
+> Las dos unidades siguientes de este módulo tratan sobre cómo mejorar la confiabilidad, el rendimiento y la seguridad del código mediante GitHub Copilot Chat.
 
-Improving code quality is often considered a precursor to adding new features or enhancements. You should consider improvements to code quality before working on code reliability, performance, or security.
+La mejora de la calidad del código suele considerarse un precursor de la adición de nuevas características o mejoras. Debes considerar las mejoras en la calidad del código antes de trabajar en la confiabilidad, rendimiento o seguridad del código.
 
-In this demonstration, you'll use GitHub Copilot Chat to generate suggestions that help you improve code quality in a sample application.
+En esta demostración, usarás GitHub Copilot Chat para generar sugerencias que te ayuden a mejorar la calidad del código en una aplicación de ejemplo.
 
-### Develop prompts for GitHub Copilot Chat
+### Desarrollo de mensajes para chat de GitHub Copilot
 
-Reiterate the importance of creating good prompts.
+Reitera la importancia de crear buenas indicaciones.
 
-The prompts you write for GitHub Copilot Chat should provide a clearly defined *context* and *intent*. The *intent* portion of the prompt describes the goal that you what to achieve. For example, you may ask GitHub Copilot to "refactor to improve code modularity". The *context* portion of the prompt tells GitHub Copilot what resources to consider. For example, you may want GitHub Copilot to consider the entire workspace, but focus on a specific file or code section. Consider the following suggestions when developing your prompts:
+Las solicitudes que escriba para GitHub Copilot Chat deben proporcionar un *contexto* y una *intención* claramente definidos. La parte de *intención* de la solicitud describe el objetivo que quiere lograr. Por ejemplo, puede pedir a GitHub Copilot que "se refactorice para mejorar la modularidad del código". La parte de *contexto* de la solicitud indica a GitHub Copilot qué recursos se deben tener en cuenta. Por ejemplo, puede que quiera que GitHub Copilot tenga en cuenta todo el área de trabajo, pero que se centre en una sección de código o archivo específica. Tenga en cuenta las siguientes sugerencias al desarrollar las solicitudes:
 
-- Define an outer context that's scoped at a higher level than the code you want to update. For example, if you want to refactor a method, specify the class or file that contains the method as the outer context. Identify the method as an inner context.
-- Use chat participants and chat variables to help specify context. You can use the `#file:` and `#selection` chat variables to identify the specific code you are focused on. You can also include the full workspace (`@workspace`) when appropriate. Suppose you want to refactor a method in a specific file. You can use the `#file:` chat variable to tell GitHub Copilot which file to look at. You can select the method in the editor and use the `#selection` chat variable to tell GitHub Copilot what code to you want to refactor. You can also use the `@workspace` chat variable to tell GitHub Copilot to consider the entire workspace. Reinforce the specified context by referring to the selection or file in the natural language portion of your prompt. For example, you might say, "how can I improve the readability of the selected code?"
-- The intent should be clear and specific, and should specify the code quality aspect that you want to improve. For example, you might ask GitHub Copilot Chat to "How can I improve the modularity of the selected code".
+- Defina un contexto externo cuyo ámbito esté en un nivel superior al código que desea actualizar. Por ejemplo, si desea refactorizar un método, especifique la clase o el archivo que contiene el método como contexto externo. Identifique el método como un contexto interno.
+- Use participantes de chat y variables de chat para ayudar a especificar el contexto. Puede usar las variables de chat `#file:` y `#selection` para identificar el código específico en el que se centra. También puede incluir el área de trabajo completa (`@workspace`) cuando corresponda. Supongamos que desea refactorizar un método en un archivo específico. Puede usar la variable de chat `#file:` para indicar a GitHub Copilot qué archivo examinar. Puede seleccionar el método en el editor y usar la variable de chat `#selection` para indicar a GitHub Copilot qué código desea refactorizar. También puede usar la variable de chat `@workspace` para indicar a GitHub Copilot que tenga en cuenta todo el área de trabajo. Para reforzar el contexto especificado, haga referencia a la selección o archivo en la parte del lenguaje natural de la solicitud. Por ejemplo, podría decir: "¿Cómo puedo mejorar la legibilidad del código seleccionado?"
+- La intención debe ser clara y concreta, y debe especificar el aspecto de la calidad del código que desea mejorar. Por ejemplo, podría preguntar a GitHub Copilot Chat "¿Cómo puedo mejorar la modularidad del código seleccionado?"
 
-During this portion of the demo, you review the **APL2007M5BankAccount** project and create three prompts for GitHub Copilot Chat. The prompts focus on improving code readability, maintainability, and modularity.
+Durante esta parte de la demostración, revisarás el proyecto **APL2007M5BankAccount** y crearás tres indicaciones para GitHub Copilot Chat. Las solicitudes se centran en mejorar la legibilidad, el mantenimiento y la modularidad del código.
 
-Use the following steps to complete this portion of the demo:
+Sigue estos pasos para completar esta parte de la demostración:
 
-1. Open the **APL2007M5BankAccount** sample app in Visual Studio Code.
+1. Abra la aplicación de ejemplo **APL2007M5BankAccount** en Visual Studio Code.
 
-1. Open the **Program.cs** file and review the code.
+1. Abra el archivo **Program.cs** y revise el código.
 
-    This program is a console application that simulates a banking system. Here are the key features:
+    Este programa es una aplicación de consola que simula un sistema bancario. Estas son las características clave:
 
-    - Main Method: The Main method is the entry point of the application. It creates bank accounts and uses the accounts to simulate transactions.
+    - El método Main: Este método es el punto de entrada de la aplicación. Crea cuentas bancarias y usa las cuentas para simular transacciones.
 
-    - Constants: The program defines several constants at the top of the Program class. The constants include things like: the number of accounts to create, the number of transactions to simulate, and the transaction limits.
+    - Constantes: El programa define varias constantes por encima de la clase Program. Las constantes incluyen cosas como: el número de cuentas que se van a crear, el número de transacciones que se van a simular y los límites de transacción.
 
-1. Take a minute to write some prompts you can use to improve code readability, maintainability, and modularity.
+1. Dedique un minuto a escribir algunas solicitudes que puede usar para mejorar la legibilidad, el mantenimiento y la modularidad del código.
 
-    For the BankAccount project, you should attach the BankAccount.cs and/or Program.cs files to the Chat context. Your prompts could be similar to the following examples:
+    Para el proyecto BankAccount, debe adjuntar los archivos BankAccount.cs o Program.cs al contexto chat. Las solicitudes podrían ser similares a los ejemplos siguientes:
 
-    Prompt: `@workspace /explain How can I improve the readability of the [selected code]?`
+    Solicitud: `@workspace /explain How can I improve the readability of the [selected code]?`
 
-    Prompt: `@workspace /explain #selection How can I improve the maintainability of the [selected code]?`
+    Solicitud: `@workspace /explain #selection How can I improve the maintainability of the [selected code]?`
 
-    Prompt: `@workspace /explainHow can I improve the modularity of the [selected code]?`
+    Solicitud: `@workspace /explainHow can I improve the modularity of the [selected code]?`
 
-    Prompt: `#selection How can I refactor the [selected code] to improve modularity?`
+    Solicitud: `#selection How can I refactor the [selected code] to improve modularity?`
 
-    Prompt: `@workspace /explain What are some options for simplifying the [selected code]?`
+    Solicitud: `@workspace /explain What are some options for simplifying the [selected code]?`
 
-1. Create three prompts to use during the remainder of the demo.
+1. Crea tres indicaciones para usarlas durante el resto de la demostración.
 
-### Refactor your code using GitHub Copilot Chat
+### Refactorice el código mediante GitHub Copilot Chat
 
-You can use GitHub Copilot Chat to suggest code updates that refactor and improve your code. It's important to understand your code and your goals before making a decision about how to refactor the application.
+Puede usar GitHub Copilot Chat para sugerir actualizaciones de código que refactoricen y mejoren el código. Es importante comprender el código y sus objetivos antes de tomar una decisión sobre cómo refactorizar la aplicación.
 
-The suggestions GitHub Copilot Chat provides must be reviewed carefully. Consider which suggestions support your goals before you implement them. For the purpose of this demo, your time may also be a factor in deciding which suggestions to implement.
+Las sugerencias que proporciona GitHub Copilot Chat deben revisarse cuidadosamente. Tenga en cuenta qué sugerencias respaldan sus objetivos antes de implementarlas. Para esta demostración, el tiempo también puede ser un factor en la decisión de qué sugerencias implementar.
 
-Use the following steps to complete this portion of the demo:
+Sigue estos pasos para completar esta parte de la demostración:
 
-1. Take a minute to review the methods included in the Program.cs file.
+1. Dedique un minuto a revisar los métodos incluidos en el archivo Program.cs.
 
-    - CreateBankAccounts Method: This method creates a specified number of bank accounts with random initial balances, account holder names, account types, and opening dates. It uses a try-catch block to handle any exceptions that might occur during account creation.
+    - Método CreateBankAccounts: Este método crea un número especificado de cuentas bancarias con saldos iniciales aleatorios, nombres de titulares de cuenta, tipos de cuenta y fechas de apertura. Usa un bloque try-catch para controlar las excepciones que pueden producirse durante la creación de la cuenta.
 
-    - SimulateTransactions Method: This method simulates a specified number of transactions on a list of bank accounts. It generates a random transaction amount for each transaction and then credits or debits the account with this amount, depending on whether the amount is positive or negative. It uses a try-catch block to handle any exceptions that might occur during the transactions.
+    - Método SimulateTransactions: Este método simula un número especificado de transacciones en una lista de cuentas bancarias. Genera un importe de transacción aleatorio para cada transacción y, a continuación, carga o abona en la cuenta este importe, dependiendo de si la cantidad es positiva o negativa. Usa un bloque try-catch para controlar las excepciones que pueden producirse durante las transacciones.
 
-    - SimulateTransfers Method: This method is identical to the SimulateTransactions method. It seems to be intended to simulate transfers between accounts, but currently, it just simulates transactions on individual accounts.
+    - Método SimulateTransfers: Este método es idéntico al método SimulateTransactions. Parece estar pensado para simular transferencias entre cuentas, pero actualmente, simplemente simula transacciones en cuentas individuales.
 
-    - GenerateRandomDollarAmount Method: This method generates a random dollar amount within a specified range. It uses a different formula to generate the amount depending on whether the amount is for an account balance or a transaction.
+    - Método GenerateRandomDollarAmount: Este método genera un importe en dólares aleatorio dentro de un intervalo especificado. Usa una fórmula diferente para generar el importe en función de si la cantidad es para un saldo de cuenta o una transacción.
 
-    - GenerateRandomAccountHolder Method: This method selects a random account holder name from a predefined list of names.
+    - Método GenerateRandomAccountHolder: Este método selecciona un nombre de titular de cuenta aleatorio de una lista predefinida de nombres.
 
-    - GenerateRandomAccountType Method: This method selects a random account type from a predefined list of types.
+    - Método GenerateRandomAccountType: Este método selecciona un tipo de cuenta aleatorio de una lista predefinida de tipos.
 
-    - GenerateRandomDateOpened Method: This method generates a random date within a specified range of years back from the current date.
+    - Método GenerateRandomDateOpened: Este método genera una fecha aleatoria dentro de un intervalo de años especificado a partir de la fecha actual.
 
-1. Ensure that the project builds and runs without errors.
+1. Asegúrese de que el proyecto se crea y ejecuta sin errores.
 
-1. Choose your first prompt from the prompts that you prepared.
+1. Elija la primera de las solicitudes que preparó.
 
-1. Select the code that you want to improve, and then open the Chat view.
+1. Seleccione el código que desea mejorar y, a continuación, abra la vista Chat.
 
-1. In the Chat view, use the **Attach Context** button to add relevant files to the Chat context, and then enter your prompt.
+1. En la vista Chat, use el botón **Adjuntar contexto** para agregar archivos pertinentes al contexto de chat y, a continuación, escriba el mensaje.
 
-    You can also demonstrate using a drag-and-drop operation to attach files from the Solution Explorer view to the Chat context.
+    También puedes demostrar el uso de una operación de arrastrar y colocar para adjuntar archivos desde la vista Explorador de soluciones al contexto de Chat.
 
-1. Review the suggestions provided by GitHub Copilot Chat.
+1. Revise las sugerencias proporcionadas por GitHub Copilot Chat.
 
-    For example, suppose you complete the following actions:
+    Por ejemplo, suponga que completa las siguientes acciones:
 
-    - You decide to work on the Program.cs file.
-    - You choose the following prompt: `@workspace /explain #selection How can I improve the readability of the GenerateRandomBalance, GenerateRandomAccountHolder, GenerateRandomAccountType, and GenerateRandomDateOpened methods?`
-    - You open the Program.cs file and select the following methods: `GenerateRandomBalance`, `GenerateRandomAccountHolder`, `GenerateRandomAccountType`, `GenerateRandomDateOpened`.
-    - You open the Chat view and attach the Program.cs file to the Chat context.
-    - You enter the prompt in the Chat view.
+    - Decide trabajar en el archivo Program.cs.
+    - Elegir la siguiente solicitud: `@workspace /explain #selection How can I improve the readability of the GenerateRandomBalance, GenerateRandomAccountHolder, GenerateRandomAccountType, and GenerateRandomDateOpened methods?`
+    - Abra el archivo Program.cs y seleccione los métodos siguientes: `GenerateRandomBalance`, `GenerateRandomAccountHolder`, `GenerateRandomAccountType`, `GenerateRandomDateOpened`.
+    - Abra la vista Chat y adjunte el archivo Program.cs al contexto chat.
+    - Escribir la solicitud en la vista Chat.
 
-    After you complete these actions, GitHub Copilot Chat suggests updates that are similar to the following response:
+    Una vez que ha completado estas acciones, GitHub Copilot Chat sugiere actualizaciones similares a la siguiente respuesta:
 
-    *To improve the readability of these methods, you can follow these steps:*
+    *Para mejorar la legibilidad de estos métodos, puede seguir estos pasos:*
 
-    *1. Extract repeated code into separate methods: The Random object is created multiple times in different methods. You could create a static Random object at the class level and use it in all methods. This would not only improve readability but also provide better randomness.*
+    *1. Extrae código repetido en métodos independientes: El objeto Random se crea varias veces en diferentes métodos. Puedes crear un objeto Random estático en el nivel de clase y usarlo en todos los métodos. Esto no solo mejoraría la legibilidad, sino que también proporcionaría una mejor aleatoriedad.*
 
     `private static readonly Random random = new Random();`
 
-    *2. Use meaningful variable names: The variable name `range` in the GenerateRandomDateOpened method is a bit vague. A more descriptive name like daysRange could be used.*
+    *2. Usa nombres de variable significativos: El nombre `range` de la variable en el método GenerateRandomDateOpened es un poco impreciso. Se podría usar un nombre más descriptivo, como daysRange.*
 
-    *3. Add comments: While the code is mostly self-explanatory, adding comments to explain what each method does can be helpful for other developers reading your code.*
+    *3. Agregue comentarios: Aunque el código se explica principalmente por sí solo, agregar comentarios para explicar lo que hace cada método puede ser útil para otros desarrolladores que leen el código.*
 
-    *4. Use constants for magic numbers: In the GenerateRandomDateOpened method, the number `10` is used to represent the number of years back the start date can be. This could be extracted to a constant with a descriptive name, like `MaxYearsBack`.*
+    *4. Utiliza constantes para números mágicos: En el método GenerateRandomDateOpened, el número `10` se utiliza para representar el número de años hacia atrás que puede tener la fecha de inicio. Esto se podría extraer en una constante con un nombre descriptivo, como `MaxYearsBack`.*
 
-    *5. Use var keyword: In C#, you can use the var keyword when the right-hand side of the assignment makes the type obvious. This can make your code cleaner and easier to read.*
+    *5. Usa la palabra clave var: En C#, puedes usar la palabra clave var cuando el lado derecho de la asignación hace que el tipo sea obvio. Esto puede hacer que el código sea más limpio y fácil de leer.*
 
-   *Here's how your code might look after these improvements:*
+   *Este es el aspecto que podría tener el código después de estas mejoras:*
 
     ```csharp
 
@@ -196,40 +196,40 @@ Use the following steps to complete this portion of the demo:
     ```
 
     > [!IMPORTANT]
-    > Notice the placeholder values (such as `/* types here */`) in the `GenerateRandomAccountHolder` and `GenerateRandomAccountType` methods. GitHub Copilot Chat occasionally replaces code details with placeholders. These are easy to spot if you're paying attention. You'll need to replace the placeholder values with values from your app when you implement an update. If you see placeholders, you should make a copy of your existing code before implementing the suggested updates. If the suggested code block aligns with the code in your app, you can use a block comment to comment out your existing code, and then use the Chat view's **Insert at Cursor** button to implement the suggested updates without creating a naming conflict. Once you verify that the suggested update works as expected, you can remove the block comment.
+    > Observe los valores de marcador de posición (como `/* types here */`) en los métodos `GenerateRandomAccountHolder` y `GenerateRandomAccountType`. GitHub Copilot Chat reemplaza ocasionalmente los detalles del código por marcadores de posición. Estos son fáciles de detectar si presta atención. Deberá reemplazar los valores de marcador de posición por valores de la aplicación al implementar una actualización. Si ve marcadores de posición, debe realizar una copia del código existente antes de implementar las sugerencias de actualización. Si el bloque de código sugerido se alinea con el código de la aplicación, puede usar un comentario de bloque para comentar el código existente y, a continuación, usar el botón **Insertar en cursor** de la vista Chat para implementar las actualizaciones sugeridas sin crear un conflicto de nomenclatura. Una vez que compruebe que la actualización sugerida funciona según lo previsto, puede quitar el comentario de bloque.
 
-1. Implement the suggested updates that help to improve code readability, maintainability, modularity.
+1. Implemente las actualizaciones sugeridas que ayudan a mejorar la legibilidad, el mantenimiento y la modularidad del código.
 
-    If you used block comments to comment out your existing code, you can use the Chat view's **Insert at Cursor** to insert the suggested updates. You can also use the Copy option and paste the update into the location of your choice.
+    Si ha usado comentarios de bloque para comentar el código existente, puede usar **Insertar en el cursor** de la vista Chat para insertar las actualizaciones sugeridas. También puede usar la opción Copiar y pegar la actualización en la ubicación que prefiera.
 
-    Consider the coding standards and policies implemented at your workplace before choosing which update suggestions to implement.
+    Tenga en cuenta los estándares de codificación y las directivas implementadas en el área de trabajo antes de elegir qué sugerencias de actualización implementar.
 
-1. To ensure that no errors were introduced when you implemented your updates, build and run your solution before continuing.
+1. Para asegurarse de que no se cometieron errores al implementar las actualizaciones, compile y ejecute la solución antes de continuar.
 
-1. Enter your second prompt and review the updates proposed by GitHub Copilot Chat.
+1. Escriba la segunda solicitud y revise las actualizaciones propuestas por GitHub Copilot Chat.
 
-1. Review the suggestions provided by GitHub Copilot Chat.
+1. Revise las sugerencias proporcionadas por GitHub Copilot Chat.
 
-    For example, suppose you complete the following actions:
+    Por ejemplo, suponga que completa las siguientes acciones:
 
-    - You implement the updates that GitHub Copilot Chat suggested for the first example prompt.
-    - You decide to continue working on the Program.cs file.
-    - You choose the following prompt: `@workspace /explain How can I improve the maintainability of the Main, GenerateRandomBalance, GenerateRandomAccountHolder, GenerateRandomAccountType, and GenerateRandomDateOpened methods?`.
-    - You select the following method(s): `Main`, `GenerateRandomBalance`, `GenerateRandomAccountHolder`, `GenerateRandomAccountType`, `GenerateRandomDateOpened`.
-    - You open the Chat view and attach the Program.cs file to the Chat context.
-    - You enter the prompt in the Chat view.
+    - Implemente las actualizaciones sugeridas por GitHub Copilot Chat para la primera solicitud de ejemplo.
+    - Decide seguir trabajando en el archivo Program.cs.
+    - Elija la siguiente solicitud: `@workspace /explain How can I improve the maintainability of the Main, GenerateRandomBalance, GenerateRandomAccountHolder, GenerateRandomAccountType, and GenerateRandomDateOpened methods?`.
+    - Seleccione los métodos siguientes: `Main`, `GenerateRandomBalance`, `GenerateRandomAccountHolder`, `GenerateRandomAccountType`, `GenerateRandomDateOpened`.
+    - Abra la vista Chat y adjunte el archivo Program.cs al contexto chat.
+    - Escribir la solicitud en la vista Chat.
 
-    After you complete these actions, GitHub Copilot Chat suggests updates that are similar to the following response:
+    Una vez que ha completado estas acciones, GitHub Copilot Chat sugiere actualizaciones similares a la siguiente respuesta:
 
-    *To improve the maintainability of these methods, you can follow these steps:*
+    *Para mejorar la capacidad de mantenimiento de estos métodos, puede seguir estos pasos:*
 
-    *1. Separation of Concerns: The Main method is doing a lot of things: creating accounts, simulating transactions, and simulating transfers. These could be broken down into separate methods to improve readability and maintainability.*
+    *1. Separación de intereses: El método Main está haciendo muchas cosas: crear cuentas, simular transacciones y simular transferencias. Podrían dividirse en métodos independientes para mejorar la legibilidad y el mantenimiento.*
 
-    *2. Error Handling: The code uses a general Exception for error handling. It would be better to create custom exceptions that are specific to the application. This would make it easier to understand and handle errors.*
+    *2. Control de errores: El código usa una excepción general para el control de errores. Sería mejor crear excepciones personalizadas específicas de la aplicación. Esto facilitaría la comprensión y el control de errores.*
 
-    *3. Magic Numbers: The code contains magic numbers (like 20 for the number of accounts, 100 for the number of transactions, etc.). These should be replaced with named constants.*
+    *3. Números mágicos: El código contiene números mágicos (como 20 para el número de cuentas, 100 para el número de transacciones, etc.). Deben reemplazarse por constantes con nombre.*
 
-    *4. Code Duplication: The code for generating random values is duplicated in several places. This could be refactored into a utility class or methods.*
+    *4. Duplicación de código: El código para generar valores aleatorios se duplica en varios lugares. Esto podría refactorizarse en una clase de utilidad o en métodos.*
 
     ```csharp
 
@@ -275,40 +275,40 @@ Use the following steps to complete this portion of the demo:
 
     ```
 
-1. Review the suggestions provided by GitHub Copilot Chat.
+1. Revise las sugerencias proporcionadas por GitHub Copilot Chat.
 
-1. Implement the suggested updates that help to improve code readability, maintainability, and modularity.
+1. Implemente las actualizaciones sugeridas que ayudan a mejorar la legibilidad, mantenimiento y modularidad del código.
 
-    If you used block comments to comment out your existing code, you can use the Chat view's **Insert at Cursor** to insert the suggested updates. You can also use the Copy option and paste the update into the location of your choice.
+    Si ha usado comentarios de bloque para comentar el código existente, puede usar **Insertar en el cursor** de la vista Chat para insertar las actualizaciones sugeridas. También puede usar la opción Copiar y pegar la actualización en la ubicación que prefiera.
 
-1. To ensure that no errors were introduced by the changes, build and run your solution before continuing.
+1. Para asegurarse de que los cambios no introdujeron ningún error, compile y ejecute la solución antes de continuar.
 
-1. Enter your third prompt, and then take a minute review the suggestions.
+1. Escriba la tercera solicitud y, a continuación, revise las sugerencias.
 
-    For example, suppose you complete the following actions:
+    Por ejemplo, suponga que completa las siguientes acciones:
 
-    - You implement the updates that GitHub Copilot Chat suggested for the first and second prompts.
-    - You decide to continue working on the Program.cs file.
-    - You choose the following prompt: `@workspace /explain How can I improve the modularity of the Program.cs file?`.
-    - You select the following code: Select all of the Program.cs file.
-    - You open the Chat view and attach the Program.cs file to the Chat context.
-    - You enter the prompt in the Chat view.
+    - Implemente las actualizaciones sugeridas por GitHub Copilot Chat para los mensajes primero y segundo.
+    - Decide seguir trabajando en el archivo Program.cs.
+    - Elija la siguiente solicitud: `@workspace /explain How can I improve the modularity of the Program.cs file?`.
+    - Seleccione el código siguiente: Seleccione todo el archivo Program.cs.
+    - Abra la vista Chat y adjunte el archivo Program.cs al contexto chat.
+    - Escribir la solicitud en la vista Chat.
 
-    After you complete these actions, GitHub Copilot Chat suggests updates that are similar to the following response:
+    Una vez que ha completado estas acciones, GitHub Copilot Chat sugiere actualizaciones similares a la siguiente respuesta:
 
-    *To improve the modularity of the Program.cs file, you can follow these steps:*
+    *Para mejorar la modularidad del archivo Program.cs, puede seguir estos pasos:*
 
-    *1. Separate Concerns: The `Program` class is doing too much. It's creating accounts, simulating transactions, and generating random data. Each of these responsibilities could be a separate class. For example, you could have a `BankAccountFactory` class that's responsible for creating bank accounts, a `TransactionSimulator` class for simulating transactions, and a `RandomDataGenerator` class for generating random data.*
+    *1. Separar los intereses: La clase `Program` está haciendo demasiado. Está creando cuentas, simulando transacciones y generando datos aleatorios. Cada una de estas responsabilidades podría ser de una clase independiente. Por ejemplo, podrías tener una clase `BankAccountFactory` responsable de crear cuentas bancarias, una clase `TransactionSimulator` para simular transacciones y una clase `RandomDataGenerator` para generar datos aleatorios.*
 
-    *2. Use Interfaces: Interfaces can be used to define a contract for classes. This can make your code more flexible and easier to test. For example, you could define an `IAccountFactory` interface with a `Create` method, and then have `BankAccountFactory` implement this interface.*
+    *2. Usar interfaces: Las interfaces se pueden usar para definir un contrato para las clases. Esto puede hacer que el código sea más flexible y fácil de probar. Por ejemplo, podrías definir una interfaz `IAccountFactory` con un método `Create` y, a continuación, hacer que `BankAccountFactory` implemente esta interfaz.*
 
-    *3. Magic Numbers: There are several "magic numbers" in the code (like 10, 50000, -500, 500, etc.). These numbers should be replaced with named constants to make the code more readable and maintainable.*
+    *3. Números mágicos: Hay varios "números mágicos" en el código (como 10, 50 000, -500, 500, etc.). Estos números deben reemplazarse por constantes con nombre para que el código sea más legible y fácil de mantener.*
 
-    *4. Duplication: The `SimulateTransactions` and `SimulateTransfers` methods have almost identical code. This duplication could be eliminated by creating a common method that both methods call.*
+    *4. Duplicación: Los métodos `SimulateTransactions` y `SimulateTransfers` tienen código casi idéntico. Esta duplicación podría eliminarse mediante la creación de un método común al que llamen ambos métodos.*
 
-   *Here's an example of how you could refactor the CreateBankAccounts method:*
+   *Este es un ejemplo de cómo podría refactorizar el método CreateBankAccounts:*
 
-    **Code snippet A: Use Interfaces**
+    **Fragmento de código A: Usar interfaces**
 
     ```csharp
 
@@ -356,7 +356,7 @@ Use the following steps to complete this portion of the demo:
 
     ```
 
-    **Code snippet B: Duplication**
+    **Fragmento de código B: Duplicación**
 
     ```csharp
 
@@ -395,13 +395,13 @@ Use the following steps to complete this portion of the demo:
     ```
 
     > [!NOTE]
-    > You don't need to implement the update suggestions that GitHub Copilot generated from your third prompt. Reviewing the suggestions may provide insights into how the code improvement process progresses.
+    > No es necesario implementar las sugerencias de actualización que GitHub Copilot generó a partir de la tercera solicitud. Revisar las sugerencias puede proporcionar información sobre cómo progresa el proceso de mejora del código.
 
-Your next two demos cover the following topics:
+Tus dos demostraciones siguientes tratan los temas siguientes:
 
-- Improve code reliability and performance by using GitHub Copilot Chat
-- Improve code security by using GitHub Copilot Chat
+- Mejora de la confiabilidad y el rendimiento del código mediante GitHub Copilot Chat
+- Mejora de la seguridad del código con GitHub Copilot Chat
 
-## Summary
+## Resumen
 
-In this demo, you used GitHub Copilot Chat to generate suggestions that help you improve code quality in a sample application. You developed prompts that focused on improving code readability, maintainability, and modularity. You reviewed the suggestions provided by GitHub Copilot Chat and implemented the updates that helped to improve code quality. You also considered additional suggestions that could further improve your code.
+En esta demostración, has usado GitHub Copilot Chat para generar sugerencias que te ayudan a mejorar la calidad del código en una aplicación de ejemplo. Ha desarrollado solicitudes que se centran en mejorar la legibilidad, mantenimiento y modularidad del código. Ha revisado las sugerencias proporcionadas por GitHub Copilot Chat e implementado las actualizaciones que ayudaron a mejorar la calidad del código. También ha considerado sugerencias adicionales que podrían mejorar aún más el código.
