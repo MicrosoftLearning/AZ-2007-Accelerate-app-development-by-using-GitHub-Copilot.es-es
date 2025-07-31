@@ -1,61 +1,61 @@
 ---
 demo:
-  title: 'Tarea de preparación de la demostración: Preparación de las "Aplicaciones de ejemplo" para las demostraciones del instructor AZ-2007'
-  module: Module 2-5
+    title: 'Demo Prep Task: Prepare the "Sample Apps" for AZ-2007 instructor demonstrations'
+    module: 'Module 2-5'
 ---
 
-# Preparación de las aplicaciones de ejemplo para las demostraciones del instructor AZ-2007
+# Prepare the Sample Applications for AZ-2007 instructor demonstrations
 
-## Instrucciones
+## Instructions
 
-### Preparación de aplicaciones de ejemplo en el entorno de Visual Studio Code
+### Prepare sample apps in your Visual Studio Code environment
 
-Los módulos de este curso incluyen actividades de demostración del instructor de GitHub Copilot. La mayoría de las demostraciones usan un código de ejemplo preparado como punto de partida para la actividad.
+The modules in this course include GitHub Copilot instructor demonstration activities. Most of the demonstrations use a prepared code sample as a starting point for the activity.
 
-Las actividades de demostración están diseñadas para un entorno que incluye los siguientes recursos:
+The demo activities are designed for an environment that includes the following resources:
 
 - Visual Studio Code.
-- Extensión del kit de desarrollo de C# para Visual Studio Code.
-- Las extensiones de GitHub Copilot y GitHub Copilot Chat para Visual Studio Code. Se requiere una cuenta de GitHub con una suscripción activa para GitHub Copilot.
-- Proyectos de código de ejemplo creados con C#.
+- The C# Dev Kit extension for Visual Studio Code.
+- The GitHub Copilot and GitHub Copilot Chat extensions for Visual Studio Code. A GitHub account with an active subscription for GitHub Copilot is required.
+- Sample code projects created using C#.
 
-**NOTA**: Se recomienda que los instructores consideren usar su propia cuenta de GitHub y la suscripción a GitHub Copilot para las demostraciones. Esto te permitirá controlar y personalizar el entorno de desarrollo. También harás que sea más fácil ajustar las demostraciones para adaptarlas a las necesidades de tus aulas.
+**NOTE**: We recommend that instructors consider using their own GitHub account and GitHub Copilot subscription for the demos. This will enable you to control and customize your dev environment. It will also make it easier to adjust the demos to fit the needs of your classrooms.
 
-**IMPORTANTE**: Si decides ejecutar las demostraciones en el entorno de laboratorio hospedado en lugar de en el equipo instructor, puedes descomprimir las aplicaciones de ejemplo en el entorno hospedado. Tendrás que configurar las extensiones de GitHub Copilot en el entorno hospedado para poder ejecutar las demostraciones. Es posible que el entorno hospedado sea más lento que el entorno local, por lo que es posible que tengas que ajustar el ritmo de las demostraciones según proceda.
+**IMPORTANT**: If you choose to run the demos in the hosted lab environment rather than your instructor PC, you can unzip the sample apps in the hosted environment. You will need to configure the GitHub Copilot extensions in the hosted environment before you can run the demos. You may find that the hosted environment is slower than your local environment, so you may need to adjust the pace of the demos accordingly.
 
-Para prepararte para las demostraciones, completa los pasos siguientes en el entorno de desarrollo elegido:
+To prepare for the demos, complete the following steps in your chosen dev environment:
 
-1. Para descargar un archivo ZIP que contenga las aplicaciones de ejemplo, abre el siguiente vínculo: [SampleApps](https://raw.githubusercontent.com/MicrosoftLearning/APL-2007-Accelerate-app-development-by-using-GitHub-Copilot/master/LearnModuleExercises/Downloads/SampleApps.zip).
+1. To download a zip file containing the sample apps, open the following link: [SampleApps](https://raw.githubusercontent.com/MicrosoftLearning/APL-2007-Accelerate-app-development-by-using-GitHub-Copilot/master/LearnModuleExercises/Downloads/SampleApps.zip).
 
-    El archivo ZIP debe descargarse automáticamente.
+    The zip file should download automatically.
 
-1. Descomprime el archivo SampleApps descargado.
+1. Unzip the downloaded SampleApps file.
 
-    Descomprima los archivos en el entorno de desarrollo.
+    Unzip the files in your development environment.
 
-    1. En la máquina local, vaya a la carpeta de descargas.
-    1. Haga clic con el botón derecho en **SampleApps.zip** y seleccione **Extraer todo**.
-    1. Seleccione **Mostrar los archivos extraídos al completar** y, a continuación, **Extraer**.
+    1. On your local machine, navigate to your downloads folder.
+    1. Right-click **SampleApps.zip**, and then select **Extract all**.
+    1. Select **Show extracted files when complete**, and then select **Extract**.
 
-1. Copie la carpeta **SampleApps** extraída en la carpeta Escritorio de Windows.
+1. Copy the extracted **SampleApps** folder to your Windows Desktop folder.
 
-    La carpeta **SampleApps** contiene los proyectos de aplicaciones de ejemplo utilizados en las demostraciones del curso. Cada proyecto está en su propia carpeta. Las instrucciones de las demostraciones indican qué proyecto se va a abrir para esa demostración.
+    The **SampleApps** folder contains the sample app projects used in the course demos. Each project is in it's own folder. The demo instructions indicate which project to open for that demo.
 
-1. Practica con cada una de las 12 demostraciones del instructor antes de presentarlas en clase.
+1. Practice each of the 12 instructor demonstrations before teaching the class.
 
-    Esto te ayudará a familiarizarte con el contenido y con los pasos necesarios para completar las actividades.
+    This will help you become familiar with the content and the steps required to complete the activities.
 
-    - Demostración 1 (demostración 1 del módulo 1): Configuración de las extensiones de GitHub Copilot para Visual Studio Code
-    - Demostración 2 (demostración 1 del módulo 2): Generación de explicaciones de código mediante GitHub Copilot Chat
-    - Demostración 3 (demostración 2 del módulo 2): Generación de documentación del proyecto mediante GitHub Copilot Chat
-    - Demostración 4 (demostración 3 del módulo 2): Generación de documentación de código insertado mediante GitHub Copilot Chat
-    - Demostración 5 (demostración 1 del módulo 3): Creación de código mediante finalizaciones de línea de código
-    - Demostración 6 (demostración 2 del módulo 3): Creación de código con GitHub Copilot Inline Chat
-    - Demostración 7 (demostración 3 del módulo 3): Desarrollo de características de código mediante herramientas de GitHub Copilot
-    - Demostración 8 (demostración 1 del módulo 4): Creación de pruebas unitarias mediante GitHub Copilot Chat
-    - Demostración 9 (demostración 2 del módulo 4): Creación de pruebas unitarias para condiciones específicas mediante GitHub Copilot
-    - Demostración 10 (demostración 1 del módulo 5): Mejora de la calidad del código con GitHub Copilot Chat
-    - Demostración 11 (demostración 2 del módulo 5): Mejora de la confiabilidad y el rendimiento del código mediante GitHub Copilot Chat
-    - Demostración 12 (demostración 3 del módulo 5): Mejora de la seguridad del código con GitHub Copilot Chat
+    - Demo 1 (Demo 1 in Module 1): Configure GitHub Copilot extensions for Visual Studio Code
+    - Demo 2 (Demo 1 in Module 2): Generate code explanations using GitHub Copilot Chat
+    - Demo 3 (Demo 2 in Module 2): Generate project documentation by using GitHub Copilot Chat
+    - Demo 4 (Demo 3 in Module 2): Generate inline code documentation by using GitHub Copilot Chat
+    - Demo 5 (Demo 1 in Module 3): Create code by using code line completions
+    - Demo 6 (Demo 2 in Module 3): Create code by using GitHub Copilot Inline Chat
+    - Demo 7 (Demo 3 in Module 3): Develop code features using GitHub Copilot tools
+    - Demo 8 (Demo 1 in Module 4): Create unit tests by using GitHub Copilot Chat
+    - Demo 9 (Demo 2 in Module 4): Create unit tests for specific conditions by using GitHub Copilot
+    - Demo 10 (Demo 1 in Module 5): Improve code quality by using GitHub Copilot Chat
+    - Demo 11 (Demo 2 in Module 5): Improve code reliability and performance by using GitHub Copilot Chat
+    - Demo 12 (Demo 3 in Module 5): Improve code security by using GitHub Copilot Chat
 
-    NOTA: La demostración 1 no usa un código de ejemplo preparado.
+    NOTE: Demo 1 does not use a prepared code sample.

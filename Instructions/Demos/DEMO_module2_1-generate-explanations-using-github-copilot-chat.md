@@ -1,49 +1,49 @@
 ---
 demo:
-  title: 'Demostración: Generación de explicaciones de código mediante GitHub Copilot Chat'
-  module: 'Module 2: Generate documentation using GitHub Copilot tools'
+    title: 'Demo: Generate code explanations using GitHub Copilot Chat'
+    module: 'Module 2: Generate documentation using GitHub Copilot tools'
 ---
 
-# Demostración: Generación de explicaciones de código mediante GitHub Copilot Chat
+# Demo: Generate code explanations using GitHub Copilot Chat
 
-## Instrucciones
+## Instructions
 
-Las actividades de demostración están diseñadas para un entorno que incluye los siguientes recursos:
+The demo activities are designed for an environment that includes the following resources:
 
 - Visual Studio Code.
-- Extensión del kit de desarrollo de C# para Visual Studio Code.
-- Las extensiones de GitHub Copilot y GitHub Copilot Chat para Visual Studio Code. Se requiere una cuenta de GitHub con una suscripción activa para GitHub Copilot.
-- Proyectos de código de ejemplo creados con C#.
+- The C# Dev Kit extension for Visual Studio Code.
+- The GitHub Copilot and GitHub Copilot Chat extensions for Visual Studio Code. A GitHub account with an active subscription for GitHub Copilot is required.
+- Sample code projects created using C#.
 
-**NOTA**: Se recomienda que los instructores consideren usar su propia cuenta de GitHub y la suscripción a GitHub Copilot para las demostraciones. Esto te permitirá controlar y personalizar el entorno de desarrollo. También harás que sea más fácil ajustar las demostraciones para adaptarlas a las necesidades de tus aulas.
+**NOTE**: We recommend that instructors consider using their own GitHub account and GitHub Copilot subscription for the demos. This will enable you to control and customize your dev environment. It will also make it easier to adjust the demos to fit the needs of your classrooms.
 
-**IMPORTANTE**: Si decides ejecutar las demostraciones en el entorno de laboratorio hospedado en lugar de en el equipo instructor, puedes descomprimir las aplicaciones de ejemplo en el entorno hospedado. Tendrás que configurar las extensiones de GitHub Copilot en el entorno hospedado para poder ejecutar las demostraciones. Es posible que el entorno hospedado sea más lento que el entorno local, por lo que es posible que tengas que ajustar el ritmo de las demostraciones según proceda.
+**IMPORTANT**: If you choose to run the demos in the hosted lab environment rather than your instructor PC, you can unzip the sample apps in the hosted environment. You will need to configure the GitHub Copilot extensions in the hosted environment before you can run the demos. You may find that the hosted environment is slower than your local environment, so you may need to adjust the pace of the demos accordingly.
 
-### Presentación de la demostración
+### Introduce the demo
 
-GitHub Copilot Chat usa asistencia conversacional de IA y comandos inteligentes para ayudarle con las tareas relacionadas con la codificación. Un ejemplo es la capacidad de explicar un código desconocido y complejo.
+GitHub Copilot Chat uses conversational AI assistance and smart commands to help you with coding-related tasks. One example is the ability to explain unfamiliar and complex code.
 
-Puede usar GitHub Copilot Chat para generar explicaciones por varios motivos. Por ejemplo:
+You can use GitHub Copilot Chat to generate explanations for a number of reasons. For example:
 
-- GitHub Copilot Chat puede explicarle toda un área de trabajo o archivos de proyecto específicos cuando se une a un proyecto existente.
-- GitHub Copilot Chat puede explicar líneas de código específicas o secciones cuando el código es complejo o difícil de entender.
-- GitHub Copilot Chat puede explicarle los errores de su código y sugerirle formas de solucionarlos.
-- GitHub Copilot Chat puede explicarle cómo agregar características a su proyecto y proporcionarle fragmentos de código que demuestran cómo implementar el nuevo código.
+- GitHub Copilot Chat can explain an entire workspace or specific project files when you join an existing project.
+- GitHub Copilot Chat can explain specific code lines or sections when code is complex or difficult to understand.
+- GitHub Copilot Chat can explain errors in your code and suggest ways to fix them.
+- GitHub Copilot Chat can explain how to add features to your project and provide code snippets that demonstrate how to implement the new code.
 
-### Explicaciones del área de trabajo y del archivo de proyecto
+### Workspace and project file explanations
 
-El chat de GitHub Copilot puede ayudarte a comprender nuevos proyectos o archivos de proyectos específicos. Puede usar una combinación `@workspace`, `/explain` y `#file` en la vista de chat o en una ventana de chat rápido para generar una explicación de su proyecto o de archivos de proyecto específicos.
+GitHub Copilot Chat can help you understand new projects or specific project files. You can use a combination `@workspace`, `/explain`, and `#file` in the Chat view or a Quick Chat window to generate an explanation of your project or specific project files.
 
-Completa los siguientes pasos para usar esta sección de la demostración:
+Use the following steps to complete this section of the demo:
 
-1. Abra la carpeta **APL2007M2Sample1** en Visual Studio Code.
+1. Open the **APL2007M2Sample1** folder in Visual Studio Code.
 
-    1. Abra Visual Studio Code en el equipo.
-    1. En Visual Studio Code, en el menú **Archivo**, seleccione **Abrir archivo**.
-    1. Vaya a la carpeta Escritorio de Windows, abra la carpeta **SampleApps** y busque la carpeta **APL2007M2Sample1**.
-    1. Seleccione **APL2007M2Sample1** y luego seleccione **Seleccionar carpeta**.
+    1. Open Visual Studio Code on your PC.
+    1. In Visual Studio Code, on the **File** menu, select **Open Folder**.
+    1. Navigate to the Windows Desktop folder, open the **SampleApps** folder, and locate the **APL2007M2Sample1** folder.
+    1. Select **APL2007M2Sample1** and then select **Select Folder**.
 
-    La vista Visual Studio Code EXPLORER debería mostrar un proyecto de código APL2007M2Sample1 que contenga los siguientes archivos:
+    The Visual Studio Code EXPLORER view should show a APL2007M2Sample1 code project containing the following files:
 
     - APL2007M2Sample1.csproj
     - APL2007M2Sample1.sln
@@ -52,55 +52,55 @@ Completa los siguientes pasos para usar esta sección de la demostración:
     - MainWindow.xaml
     - MainWindow.xaml.cs
 
-1. En la barra de menús superior de Visual Studio Code, seleccione **Abrir chat**.
+1. On Visual Studio Code's top menu bar, select **Open Chat**.
 
-    El botón Abrir chat se encuentra en la barra de menús de la parte superior de la ventana de Visual Studio Code, justo a la derecha del cuadro de búsqueda. Muestra un pequeño logotipo de GitHub Copilot.
+    The Open Chat button is located on the menu bar at the top of the Visual Studio Code window, just to the right of the Searchbox. It displays a small GitHub Copilot logo.
 
-1. Use el siguiente comando para pedir al chat de Copilot que explique el proyecto de `APL2007M2Sample1`:
+1. Use the following command to ask Copilot Chat to explain the `APL2007M2Sample1` project:
 
     ```plaintext
     @workspace Explain this project
     ```
 
-1. Tómese un minuto para revisar la respuesta en la vista de chat.
+1. Take a minute to review the response in the Chat view.
 
-    GitHub Copilot Chat genera una explicación del proyecto APL2007M2Sample1 similar a la siguiente respuesta:
+    GitHub Copilot Chat generates an explanation of the APL2007M2Sample1 project that's similar to the following response:
 
     > [!IMPORTANT]
-    > GitHub Copilot Chat usa un modelo de IA para generar respuestas. Las respuestas que reciba son similares a las que se muestran en este entrenamiento, pero no son idénticas.
+    > GitHub Copilot Chat uses an AI model to generate responses. The responses you receive are similar to the responses shown in this training, but they aren't identical.
 
-1. En la parte inferior de la vista de chat, observa que el chat de GitHub Copilot ha sugerido una pregunta de seguimiento.
+1. At the bottom of the Chat view, notice that GitHub Copilot Chat has suggested a follow-up question.
 
-    La respuesta que recibe puede incluir una pregunta de seguimiento diferente.
+    The response you receive may include a different follow-up question.
 
-    GitHub Copilot Chat crea un historial de la conversación de chat. El historial ayuda a GitHub Copilot Chat a comprender sus intereses. A medida que construye un historial de chat, el modelo de IA aprende de sus interacciones y le proporciona preguntas de seguimiento más pertinentes. No se recomienda explorar preguntas de seguimiento "aleatorias".
+    GitHub Copilot Chat builds a history of your chat conversation. The history helps GitHub Copilot Chat understand your interests. As you build a chat history, the AI model learns from your interactions and provides more relevant follow-up questions. Exploring "random" follow-up questions isn't recommended.
 
-1. Abra el archivo `MainWindow.xaml.cs` en el editor.
+1. Open the `MainWindow.xaml.cs` file in the editor.
 
-1. Use el siguiente comando para pedir a Copilot que explique el archivo `MainWindow.xaml.cs`:
+1. Use the following command to ask Copilot to explain the `MainWindow.xaml.cs` file:
 
     ```plaintext
     @workspace /explain #file:MainWindow.xaml.cs
     ```
 
-1. Tómese un minuto para revisar la respuesta en la vista de chat.
+1. Take a minute to review the response in the Chat view.
 
-    Observe que el chat GitHub Copilot genera una explicación detallada del archivo `MainWindow.xaml.cs`. La explicación incluye información sobre la finalidad, la estructura y los componentes clave del archivo. También puede ver una sección que describe posibles problemas y mejoras.
+    Notice that GitHub Copilot Chat generates a detailed explanation of the `MainWindow.xaml.cs` file. The explanation includes information about the file's purpose, structure, and key components. You may also see a section that describes potential issues and improvements.
 
-    Una vez más, el chat de GitHub Copilot sugiere una pregunta de seguimiento.
+    Once again, GitHub Copilot Chat suggests a follow-up question.
 
     > [!IMPORTANT]
-    > El chat de GitHub Copilot mantiene un historial de su conversación de chat. A medida que siga haciéndole preguntas, perfeccionará sus respuestas. El contexto de sus preguntas, especialmente en lo que respecta a su proyecto de código, influye en las respuestas posteriores del chat de GitHub Copilot. Esto le ayuda a proporcionar respuestas más precisas y pertinentes. También significa que es probable que la respuesta que reciba para una pregunta concreta varíe en función de su historial de conversaciones.
+    > GitHub Copilot Chat maintains a history of your chat conversation. As you continue to ask questions, it refines its responses accordingly. The context of your questions, especially in regard to your code project, influences GitHub Copilot Chat's subsequent responses. This helps it to provide more accurate and relevant responses. It also means the response you receive for a particular question is likely to vary based on your conversation history.
 
-### Explicaciones de código seleccionadas
+### Selected code explanations
 
-Incluso los desarrolladores experimentados se encuentran con código difícil de entender. En lugar de perder tiempo intentando descifrar un código complejo, puede pedir al chat de GitHub Copilot que le proporcione una explicación. La vista de chat, el chat en línea y las acciones inteligentes pueden utilizarse para generar explicaciones de las líneas o secciones de código seleccionadas.
+Even experienced developers encounter code that's difficult to understand. Rather than spending time trying to decipher complex code, you can ask GitHub Copilot Chat to provide an explanation. Chat view, inline chat, and smart actions can each be used to generate explanations for selected code lines or sections.
 
-En esta sección de la demostración, usarás la acción inteligente **Explicar** para generar una explicación de las líneas de código seleccionadas.
+In this section of the demo, you use the **Explain** smart action to generate an explanation of selected code lines.
 
-1. Asegúrese de que tiene el archivo `MainWindow.xaml.cs` abierto en el editor.
+1. Ensure that you have the `MainWindow.xaml.cs` file open in the editor.
 
-1. Desplácese hacia abajo para buscar el método `SumPageSizesAsync()`.
+1. Scroll down to locate the `SumPageSizesAsync()` method.
 
     ```csharp
 
@@ -124,9 +124,9 @@ En esta sección de la demostración, usarás la acción inteligente **Explicar*
 
     ```
 
-1. Seleccione las siguientes líneas de código y, a continuación, use la acción inteligente **Explicar** para generar una explicación.
+1. Select the following code lines, and then use the **Explain** smart action to generate an explanation.
 
-    Para seleccionar la acción inteligente **Explicar**, haga clic con el botón derecho del ratón en las líneas de código seleccionadas, seleccione **Copilot** y, después, seleccione **Explicar** en el menú contextual.
+    To select the **Explain** smart action, right-click the selected code lines, select **Copilot**, and then select **Explain** from the context menu.
 
     ```csharp
 
@@ -137,88 +137,88 @@ En esta sección de la demostración, usarás la acción inteligente **Explicar*
 
     ```
 
-1. Tómese un minuto para revisar la respuesta en la vista de chat.
+1. Take a minute to review the response in the Chat view.
 
-1. Observe el nivel de detalle incluido en la explicación.
+1. Notice the level of detail included in the explanation.
 
-    GitHub Copilot Chat genera explicaciones detalladas que incluyen información sobre las líneas de código seleccionadas, su finalidad y su funcionamiento. Las respuestas incluyen fragmentos de código y descripciones en lenguaje natural que le ayudarán a comprender el código.
+    GitHub Copilot Chat generates detailed explanations that include information about the selected code lines, their purpose, and how they work. Responses include code snippets and natural language descriptions that help you understand the code.
 
-### Explicaciones de errores
+### Error explanations
 
-La administración de errores es un aspecto esencial del desarrollo de software. Algunos errores son fáciles de detectar y corregir, mientras que otros pueden ser más complicados. Cuando encuentre un error en su código que sea difícil de entender, puede pedir al Chat de GitHub Copilot que le proporcione una explicación. Por ejemplo, puede pedir al chat de GitHub Copilot que le explique por qué una línea de código específica está causando un error.
+Managing errors is an essential aspect of software development. Some errors are easy to spot and fix, while others can be more challenging. When you encounter an error in your code that's difficult to understand, you can ask GitHub Copilot Chat to provide an explanation. For example, you can ask GitHub Copilot Chat to explain why a specific line of code is causing an error.
 
-Completa los siguientes pasos para usar esta sección de la demostración:
+Use the following steps to complete this section of the demo:
 
-1. Asegúrese de que tiene `MainWindow.xaml.cs` abierto en el editor.
+1. Ensure that you have `MainWindow.xaml.cs` open in the editor.
 
-1. En el método `SumPageSizesAsync()`, busque la siguiente línea de código:
+1. In the `SumPageSizesAsync()` method, locate the following code line:
 
     ```csharp
     int[] lengths = Task.WhenAll(downloadTasks);
     ```
 
-1. Pase el mouse sobre `downloadTasks` para ver el mensaje de error.
+1. Hover the mouse cursor over `downloadTasks` to display the error message.
 
-    Los mensajes de error no siempre explican cómo corregir problemas de codificación. Cuando la solución no es obvia, puede pedir a GitHub Copilot Chat para explicar un error y sugerir maneras de corregirla.
+    Error messages don't always explain how to fix coding issues. When the solution isn't obvious, you can ask GitHub Copilot Chat to explain an error and suggest ways to fix it.
 
-1. Selecciona la línea de código que contiene el error y presiona **Ctrl+I** para abrir un chat insertado.
+1. Select the code line containing the error, and then press **Ctrl+I** to open an inline chat.
 
-1. Para generar una explicación del error, escriba el siguiente mensaje:
+1. To generate an explanation for the error, enter the following prompt:
 
     ```plaintext
     /explain why is the selection causing an error
     ```
 
-1. Tómese un minuto para revisar la respuesta en la vista de chat.
+1. Take a minute to review the response in the Chat view.
 
-    Observe que la respuesta incluye información sobre el error y las sugerencias para corregirlo. En este caso, el chat de GitHub Copilot explica que la línea `Task.WhenAll(downloadTasks)` está causando un error porque le falta la palabra clave `await`. La respuesta también proporciona un fragmento de código que muestra cómo corregir el error agregando la palabra clave `await` antes de la línea `Task.WhenAll(downloadTasks)`.
+    Notice that the response includes information about the error and suggestions for fixing it. In this case, GitHub Copilot Chat explains that the `Task.WhenAll(downloadTasks)` line is causing an error because it's missing the `await` keyword. The response also provides a code snippet that shows how to fix the error by adding the `await` keyword before the `Task.WhenAll(downloadTasks)` line.
 
-1. Use la explicación proporcionada por GitHub Copilot Chat para corregir el error en el código.
+1. Use the explanation provided by GitHub Copilot Chat to fix the error in your code.
 
-    Agregue la palabra clave `await` antes de la línea `Task.WhenAll(downloadTasks)`, como se muestra en el siguiente fragmento de código:
+    Add the `await` keyword before the `Task.WhenAll(downloadTasks)` line, as shown in the following code snippet:
 
     ```csharp
     int[] lengths = await Task.WhenAll(downloadTasks);
     ```
 
-    Después de realizar este cambio, se debería resolver el error.
+    After you make this change, the error should be resolved.
 
-### Nuevas explicaciones de características o funcionalidades
+### New feature or functionality explanations
 
-GitHub Copilot Chat puede explicarle cómo agregar nuevas características o funcionalidad a su proyecto.
+GitHub Copilot Chat can explain how to add new features or functionality to your project.
 
-Considere el proyecto APL2007M2Sample1. Su código descarga páginas web y calcula el tamaño total de las páginas descargadas. Supongamos que necesita agregar el control de excepciones a la aplicación. En esta sección de la demostración, usarás GitHub Copilot Chat para explicar cómo administrar excepciones durante el proceso de descarga.
+Consider the APL2007M2Sample1 project. Your code downloads web pages and calculates the total size of the downloaded pages. Suppose you need to add exception handling to the application. In this section of the demo, you use GitHub Copilot Chat to explain how to manage exceptions during the download process.
 
-Completa los siguientes pasos para usar esta sección de la demostración:
+Use the following steps to complete this section of the demo:
 
-1. Seleccione las líneas de código que incluyen los métodos `SumPageSizesAsync` y `ProcessUrlAsync`.
+1. Select the code lines that include the `SumPageSizesAsync` and `ProcessUrlAsync` methods.
 
-1. En la vista de Chat, para que el chat de GitHub Copilot explique cómo controlar las excepciones producidas durante el proceso de descarga, escriba la siguiente pregunta:
+1. In the Chat view, to have GitHub Copilot Chat explain how to handle exceptions thrown during the download process, enter the following question:
 
     ```plaintext
     @workspace /explain #MainWindow.xaml.cs How can I handle exceptions thrown during the download process?
     ```
 
-1. Tómese un minuto para revisar la respuesta en la vista de chat.
+1. Take a minute to review the response in the Chat view.
 
-    El chat Copilot genera una respuesta similar a la siguiente explicación:
+    Copilot Chat generates a response that's similar to the following explanation:
 
-    La respuesta proporciona una explicación detallada de cómo controlar las excepciones producidas durante el proceso de descarga. También obtendrá un fragmento de código que implementa el código sugerido para el control de excepciones. Puede copiar el fragmento de código o insertarlo en su proyecto de código en la ubicación del cursor.
+    The response provides a detailed explanation of how to handle exceptions thrown during the download process. You also get a code snippet that implements the suggested exception handling code. You can copy the code snippet or insert it into your code project at the location of the cursor.
 
-    En lugar de copiar o insertar el fragmento de código de la vista de chat, el siguiente paso investiga usando el chat insertado para implementar el código de control de excepciones sugerido.
+    Rather than copying or inserting the code snippet from the Chat view, the next step investigates using the inline chat to implement the suggested exception handling code.
 
-1. Para preguntar al chat insertado cómo implementar el control de excepciones, selecciona el método `ProcessUrlAsync`, presiona **Ctrl+I** y, a continuación, escribe la indicación siguiente:
+1. To ask inline chat how to implement exception handling, select the `ProcessUrlAsync` method, press **Ctrl+I**, and then enter the following prompt:
 
     ```plaintext
     How can I handle exceptions thrown during the download process?
     ```
 
-1. Tómese un minuto para revisar la respuesta insertada.
+1. Take a minute to review the inline response.
 
-1. Para aceptar el código de control de errores propuesto, seleccione **Aceptar**.
+1. To accept the proposed error handling code, select **Accept**.
 
-    Observe que el bloque propuesto `try-catch` está implementado.
+    Notice that the proposed `try-catch` block is implemented.
 
-### Resumen
+### Summary
 
-En esta demostración, has usado GitHub Copilot Chat para generar explicaciones sobre líneas de código, errores y nuevas características. El chat de GitHub Copilot ofrece un potente conjunto de características que pueden ayudarle a impulsar rápidamente un nuevo proyecto. Mediante el chat insertada y la vista Chat, podrá obtener ayuda del chat de GitHub Copilot sin salir del entorno de Visual Studio Code. El modelo de IA del chat de GitHub Copilot genera respuestas precisas y útiles que pueden ayudarle a convertirse en un desarrollador más eficiente y eficaz.
+In this demo, you used GitHub Copilot Chat to generate explanations for code lines, errors, and new features. GitHub Copilot Chat provides a powerful set of features that can help you ramp up on new project quickly. By using the inline chat and Chat view, you can get help from GitHub Copilot Chat without leaving the Visual Studio Code environment. GitHub Copilot Chat's AI model generates accurate and useful responses that can help you become a more efficient and effective developer.
